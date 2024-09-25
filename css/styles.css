@@ -643,13 +643,14 @@ placeholder{
     border: none;
 }
 
-.icon-button-close {
+.icon-button-close{
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-button-close:hover,
-.icon-button-close:focus{
-    fill: #ffffff;
+.button-close-modal:hover + .icon-button-close,
+.button-close-modal:focus-within + .icon-button-close
+{
+    fill: #ffffff
 }
 
 .modal-form {
