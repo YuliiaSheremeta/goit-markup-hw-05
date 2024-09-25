@@ -710,7 +710,7 @@ position: relative;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-input:focus{
+.input-name > .svg-input:focus{
     fill: #4D5AE5;
 }
 .modal-icon-privacy {
@@ -759,7 +759,7 @@ position: relative;
     justify-content: center;
     fill: transparent;
 }
-input:checked + label > span {
+.input-checkbox:checked + .user-privacy-label > .checkbox-span-privacy{
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
