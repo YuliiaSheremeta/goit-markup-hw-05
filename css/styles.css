@@ -759,7 +759,7 @@ position: relative;
     justify-content: center;
     fill: transparent;
 }
-.input-checkbox:checked > .checkbox-span-privacy{
+input[type="checkbox"]:checked + label > span{
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
