@@ -700,7 +700,7 @@ position: relative;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-name:focus-within + .svg-input{
+.input-name:focus{
     border-color: #4D5AE5;
 }
 .svg-input{
@@ -710,7 +710,7 @@ position: relative;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-name > .svg-input:focus{
+.input-name:focus-within + .svg-input{
     fill: #4D5AE5;
 }
 .modal-icon-privacy {
