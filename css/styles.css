@@ -502,9 +502,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-form{
     display: flex;
     gap: 24px;
+   
 }
 .footer-input {
-
+    flex-shrink: 0;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -516,11 +517,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    margin-right: 24px;
-    padding-left: 16px;
+  
 }
-placeholder{
+.footer-input::placeholder{
     color: #ffffff;
+   
 }
 
 .footer-button{
@@ -529,7 +530,7 @@ placeholder{
     justify-content: center;
     align-items: center;
     gap: 16px;
-    min-width: 165px;
+    max-width: 165px;
     height: 40px;
     border: none;
     border-radius: 4px;
@@ -552,8 +553,7 @@ placeholder{
     background-color: #404bbf;
 }
 .footer-button-container{
-    display: flex;
-    margin-left: auto;      
+  margin-left: 80px;
 }
 .container-footer {
     display: flex;
@@ -570,9 +570,10 @@ placeholder{
 }
 
 .footer-button-icon {
-    margin-left: 16px;
     fill: #fff;
-    padding-top: 8px;
+   
+  
+   
 }
 
 /*Modal-overlay*/
@@ -590,6 +591,7 @@ placeholder{
     justify-content: center;
     align-items: center;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -598,6 +600,7 @@ placeholder{
 
 .modal-overlay .is-open{
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
     
@@ -657,9 +660,8 @@ placeholder{
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 360px;
+    
 }
 
 .modal-text {
@@ -676,10 +678,14 @@ placeholder{
 }
 .modal-input-comment-container{
     margin-bottom: 16px;
+    width: 360px;
+    
 }
 
 .input-svg-container{
-position: relative;
+    position: relative;
+    width: 360px;
+
 }
 .modal-label {
     display: block;
@@ -758,6 +764,7 @@ position: relative;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 input[type="checkbox"]:checked + label > span{
     background-color: #404bbf;
@@ -766,7 +773,9 @@ input[type="checkbox"]:checked + label > span{
 }
 .privacy-link{
     color: #4d5ae5;
+    text-decoration: underline;
 }
+
 .button-modal-submit {
     display: flex;
     align-items: flex-start;
@@ -793,4 +802,5 @@ input[type="checkbox"]:checked + label > span{
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
